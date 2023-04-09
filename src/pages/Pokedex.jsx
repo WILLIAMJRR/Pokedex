@@ -86,7 +86,7 @@ const Pokedex = () => {
                         autoComplete='off'
                         placeholder=''
                     />
-                    <button className='poke_btn'><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+                    <button className='poke_btn'><i className="fa-solid fa-magnifying-glass fa-2x"></i></button>
                 </form>
                 <p>Type Pokemons</p>
                 <SelectTypes setSelectValue={setSelectValue} />

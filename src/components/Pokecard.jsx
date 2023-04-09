@@ -34,8 +34,7 @@ const Pokecard = ({ pokemon }) => {
                     <img
                         className='card_img'
                         src={
-                            poke?.sprites.other['official-artwork']
-                                .front_default
+                            poke?.sprites.other.dream_world.front_default
                         }
                         alt={poke?.name}
                     />

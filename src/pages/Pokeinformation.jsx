@@ -27,8 +27,7 @@ const Pokeinformation = () => {
             .then((res) => {
                 setData({
                     name: res.data?.name,
-                    image: res.data?.sprites.other['official-artwork']
-                        ?.front_default,
+                    image: res.data?.sprites.other['official-artwork']?.front_default,
                     type: res.data?.types,
                     height: res.data?.height,
                     weight: res.data?.weight,
@@ -56,7 +55,7 @@ const Pokeinformation = () => {
                 <div className='img_opacity'></div>
                 <Link to='/pokedex'>
                     <button className='btn_error'>
-                        <i class='fa-solid fa-arrow-left'></i>
+                        <i className='fa-solid fa-arrow-left'></i>
                     </button>
                 </Link>
 
@@ -77,7 +76,7 @@ const Pokeinformation = () => {
                     <div className={`btn_container bg-${type}`}>
                         <Link to='/pokedex'>
                             <button className='btn_pokemon_detail '>
-                                <i class='fa-solid fa-arrow-left'></i>
+                                <i className='fa-solid fa-arrow-left'></i>
                             </button>
                         </Link>
                     </div>
@@ -135,45 +134,31 @@ const Pokeinformation = () => {
                         <h1>Stats base</h1>
                         <h4>HP</h4>
                         <div className='progress'>
-                            <div
-                                className='progress-bar'
-                                style={{ width: data.hp * 2.4 }}
-                            >
-                                <span className='progress-text'>
-                                    {data.hp}pts
-                                </span>
+                            <div className='progress-bar'style={{ width: data.hp * 2.4 }}>
+                                <span className='progress-text'>{data.hp} pts</span>
                             </div>
                         </div>
                         <h4>Speed</h4>
                         <div className='progress'>
-                            <div
-                                className='progress-bar'
-                                style={{ width: data.speed * 2.4 }}
-                            >
+                            <div className='progress-bar' style={{ width: data.speed * 2.4 }}>
                                 <span className='progress-text'>
-                                    {data.speed}pts
+                                    {data.speed} pts
                                 </span>
                             </div>
                         </div>
                         <h4>Attack</h4>
                         <div className='progress'>
-                            <div
-                                className='progress-bar'
-                                style={{ width: data.attack * 2.4 }}
-                            >
+                            <div className='progress-bar' style={{ width: data.attack * 2.4 }}>
                                 <span className='progress-text'>
-                                    {data.attack}pts
+                                    {data.attack} pts
                                 </span>
                             </div>
                         </div>
                         <h4>Defense</h4>
                         <div className='progress'>
-                            <div
-                                className='progress-bar'
-                                style={{ width: data.defense * 2.4 }}
-                            >
+                            <div className='progress-bar'style={{ width: data.defense * 2.5 }}>
                                 <span className='progress-text'>
-                                    {data.defense}pts
+                                    {data.defense} pts
                                 </span>
                             </div>
                         </div>

@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import videopokemon from '../video/Pokemon Ash_Satoshi Campeón Mundial Latino EDIT (1080p_30fps_H264-128kbit_AAC).mp4';
 import homecss from './style/home.css';
+import pokelogo from '../img/International_Pokémon_logo.svg.png'
 //paso 7
 const Home = () => {
     //paso 7.4
@@ -30,7 +31,7 @@ const Home = () => {
             <div className='home_img_con'>
                 <img
                     className='home_img'
-                    src='/src/img/International_Pokémon_logo.svg.png'
+                    src={pokelogo}
                     alt=''
                 />
             </div>
@@ -56,7 +57,7 @@ const Home = () => {
                     />
                 </div>
                 <button className='home_btn'>
-                    <i class='fa-solid fa-magnifying-glass-arrow-right fa-2x'></i>
+                    <i className='fa-solid fa-magnifying-glass-arrow-right fa-2x'></i>
                 </button>
             </form>
         </div>
